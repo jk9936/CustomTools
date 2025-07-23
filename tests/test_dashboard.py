@@ -8,7 +8,7 @@ import json
 import os
 import sys
 from pathlib import Path
-from dashboard_generator import DashboardGenerator
+from tools.dashboard import DashboardGenerator
 
 def create_test_data():
     """Create various test data configurations"""
