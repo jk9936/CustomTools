@@ -1,0 +1,164 @@
+{
+  "title": "Sales Dashboard",
+  "description": "Monthly sales performance and analytics",
+  "metrics": [
+    {
+      "name": "Total Revenue",
+      "value": "₹2,45,000",
+      "change": "+15%",
+      "trend": "up",
+      "color": "#2ecc71"
+    },
+    {
+      "name": "New Customers",
+      "value": "1,247",
+      "change": "+8%",
+      "trend": "up",
+      "color": "#3498db"
+    },
+    {
+      "name": "Orders",
+      "value": "856",
+      "change": "-3%",
+      "trend": "down",
+      "color": "#e74c3c"
+    },
+    {
+      "name": "Conversion Rate",
+      "value": "3.2%",
+      "change": "+0.5%",
+      "trend": "up",
+      "color": "#f39c12"
+    }
+  ],
+  "charts": [
+    {
+      "title": "Monthly Revenue",
+      "type": "line",
+      "labels": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun"
+      ],
+      "datasets": [
+        {
+          "label": "Revenue (₹)",
+          "data": [
+            180000,
+            190000,
+            210000,
+            220000,
+            235000,
+            245000
+          ],
+          "borderColor": "#3498db",
+          "backgroundColor": "rgba(52, 152, 219, 0.1)",
+          "fill": true
+        }
+      ]
+    },
+    {
+      "title": "Product Categories",
+      "type": "pie",
+      "labels": [
+        "Electronics",
+        "Clothing",
+        "Books",
+        "Home",
+        "Sports"
+      ],
+      "datasets": [
+        {
+          "data": [
+            35,
+            25,
+            15,
+            15,
+            10
+          ],
+          "backgroundColor": [
+            "#3498db",
+            "#2ecc71",
+            "#f39c12",
+            "#e74c3c",
+            "#9b59b6"
+          ]
+        }
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "title": "Top Products",
+      "headers": [
+        "Product",
+        "Sales",
+        "Revenue",
+        "Growth"
+      ],
+      "rows": [
+        [
+          "iPhone 15",
+          "245",
+          "₹2,45,000",
+          "+15%"
+        ],
+        [
+          "MacBook Pro",
+          "132",
+          "₹1,98,000",
+          "+8%"
+        ],
+        [
+          "iPad Air",
+          "89",
+          "₹89,000",
+          "+12%"
+        ],
+        [
+          "AirPods Pro",
+          "156",
+          "₹46,800",
+          "+25%"
+        ],
+        [
+          "Apple Watch",
+          "78",
+          "₹39,000",
+          "+5%"
+        ]
+      ],
+      "searchable": true,
+      "sortable": true
+    }
+  ],
+  "cards": [
+    {
+      "title": "System Status",
+      "content": "All systems operational. Last backup: 2 hours ago",
+      "type": "success",
+      "icon": "✅"
+    },
+    {
+      "title": "Pending Tasks",
+      "content": "5 pending orders need attention",
+      "type": "warning",
+      "icon": "⚠️"
+    }
+  ],
+  "alerts": [
+    {
+      "type": "success",
+      "message": "Monthly target achieved! 🎉",
+      "icon": "check-circle"
+    },
+    {
+      "type": "warning",
+      "message": "Low inventory alert for 3 products",
+      "icon": "exclamation-triangle"
+    }
+  ]
+}

@@ -741,41 +741,41 @@ Examples:
     
     if args.sample:
         sample_path = generator.create_sample_data()
-        print(f" Sample data created: {sample_path}")
-        print(f" Try: python dashboard_generator.py -i {sample_path} -o sample_dashboard.html --open")
+        print(f"✅ Sample data created: {sample_path}")
+        print(f"💡 Try: python dashboard_generator.py -i {sample_path} -o sample_dashboard.html --open")
         return
     
     if not args.input:
-        print(" Error: Input file required. Use -i option or --sample to generate sample data.")
+        print("❌ Error: Input file required. Use -i option or --sample to generate sample data.")
         parser.print_help()
         sys.exit(1)
     
     try:
         if args.verbose:
-            print(f" Loading data from: {args.input}")
+            print(f"📖 Loading data from: {args.input}")
         
         raw_data = generator.load_json_data(args.input)
         
         if args.verbose:
-            print(" Processing data...")
+            print("🔄 Processing data...")
         
         processed_data = generator.process_data(raw_data)
         
         if args.verbose:
-            print(f" Generating dashboard: {args.output}")
+            print(f"🎨 Generating dashboard: {args.output}")
         
         output_path = generator.generate_dashboard(processed_data, args.output)
         
-        print(f" Dashboard generated successfully!")
-        print(f" Output file: {output_path}")
-        print(f" Contains: {len(processed_data['metrics'])} metrics, {len(processed_data['charts'])} charts, {len(processed_data['tables'])} tables")
+        print(f"✅ Dashboard generated successfully!")
+        print(f"📄 Output file: {output_path}")
+        print(f"📊 Contains: {len(processed_data['metrics'])} metrics, {len(processed_data['charts'])} charts, {len(processed_data['tables'])} tables")
         
         if args.open:
             webbrowser.open(f"file://{output_path.absolute()}")
-            print("Dashboard opened in browser")
+            print("🌐 Dashboard opened in browser")
             
     except Exception as e:
-        print(f" Error generating dashboard: {e}")
+        print(f"❌ Error generating dashboard: {e}")
         if args.verbose:
             import traceback
             traceback.print_exc()
