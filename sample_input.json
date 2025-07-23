@@ -1,0 +1,39 @@
+{
+  "title": "JSON File Dashboard",
+  "description": "Dashboard created from JSON file",
+  "metrics": [
+    {
+      "name": "File Size",
+      "value": "2.5 MB",
+      "color": "#9b59b6"
+    }
+  ],
+  "charts": [
+    {
+      "title": "File Types",
+      "type": "doughnut",
+      "labels": [
+        "JSON",
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "datasets": [
+        {
+          "data": [
+            40,
+            30,
+            20,
+            10
+          ],
+          "backgroundColor": [
+            "#3498db",
+            "#2ecc71",
+            "#f39c12",
+            "#e74c3c"
+          ]
+        }
+      ]
+    }
+  ]
+}
